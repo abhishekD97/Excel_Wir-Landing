@@ -1,9 +1,21 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { LazyLoadComponent, LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import img from "../src/images/fac.webp";
+import ReactGA from "react-ga";
+
+
 
 const About =() => {
+
+
+    useEffect(() => {
+
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    
+    }, [])
+
+
     return ( <>
         <LazyLoadComponent className="main_heading my-5  bg-light py-5">
         <div className="text-center">

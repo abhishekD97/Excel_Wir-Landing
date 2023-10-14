@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 import ReactGA from "react-ga";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -19,7 +19,7 @@ const Certificate =() => {
 
     useEffect(() => {
 
-        ReactGA.pageview(window.location.pathname);
+        ReactGA.pageview(window.location.pathname + window.location.search);
 
     }, [])
 

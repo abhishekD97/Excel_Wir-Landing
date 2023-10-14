@@ -9,7 +9,7 @@ const ACSR =() => {
   
   useEffect(() => {
 
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
 }, [])
 

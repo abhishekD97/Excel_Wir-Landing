@@ -96,7 +96,7 @@ import emailjs from "emailjs-com";
 
 const Contact = () => {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   const [user_name, setFirstname] = useState('');

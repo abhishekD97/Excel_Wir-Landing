@@ -8,6 +8,7 @@ import Client4 from "../src/images/client4.webp"
 import Client5 from "../src/images/client5.webp"
 
 const ClientGlimpse =() => {
+    
     return ( <>
         <section className="main_heading pt-4 pb-1">
         <div className="text-center">
